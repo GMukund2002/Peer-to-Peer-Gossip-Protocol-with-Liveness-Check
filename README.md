@@ -33,3 +33,10 @@ This project implements a peer-to-peer (P2P) gossip protocol network with livene
 * **config.txt**: Contains a list of IP addresses and ports for all available seed nodes.
 * **outputseed.txt**: Records all the output related to seed nodes, such as connection requests from peers and dead node notifications.
 * **outputpeer.txt**: Records all the output related to peer nodes, such as gossip messages received, liveness checks, and dead node reports.
+
+
+## Installation and Setup Instructions:
+#### 1. Clone the Repository:
+```bash
+def hello_world():
+    print("Hello, World!")

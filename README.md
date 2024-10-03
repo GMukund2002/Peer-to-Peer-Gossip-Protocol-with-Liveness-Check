@@ -28,8 +28,8 @@ This project implements a peer-to-peer (P2P) gossip protocol network with livene
 
 * The system is implemented using Python’s threading library to handle multiple tasks simultaneously, such as managing connections, broadcasting gossip messages, and handling liveness checks, thereby making the system efficient and responsive.
 ## File Descriptions:
-** **seed.py**: Implements the seed node logic. Seeds maintain a list of all connected peers, handle incoming peer registrations, and update the peer list based on dead node reports.
-** **peer.py**: Implements the peer node logic. Peers connect to seeds to get the network information, form connections with other peers, manage gossip message broadcasting, and perform liveness checks.
-** **config.txt**: Contains a list of IP addresses and ports for all available seed nodes.
-** **outputseed.txt**: Records all the output related to seed nodes, such as connection requests from peers and dead node notifications.
-** **outputpeer.txt**: Records all the output related to peer nodes, such as gossip messages received, liveness checks, and dead node reports.
+* **seed.py**: Implements the seed node logic. Seeds maintain a list of all connected peers, handle incoming peer registrations, and update the peer list based on dead node reports.
+* **peer.py**: Implements the peer node logic. Peers connect to seeds to get the network information, form connections with other peers, manage gossip message broadcasting, and perform liveness checks.
+* **config.txt**: Contains a list of IP addresses and ports for all available seed nodes.
+* **outputseed.txt**: Records all the output related to seed nodes, such as connection requests from peers and dead node notifications.
+* **outputpeer.txt**: Records all the output related to peer nodes, such as gossip messages received, liveness checks, and dead node reports.

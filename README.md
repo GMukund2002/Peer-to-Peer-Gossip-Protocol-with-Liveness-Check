@@ -63,8 +63,8 @@ python peer.py
 Outputs are stored in outputseed.txt and outputpeer.txt, which record all major activities, such as connection requests, gossip messages, liveness checks, and notifications of dead nodes.
 
 ## Advantages of the Project:
-**1. Resilient Network:** The network is designed to handle node failures gracefully by quickly removing dead nodes from the list and preventing connections to inactive nodes.
-**2. Efficient Communication:** The gossip protocol ensures efficient message broadcasting without redundancy, making it suitable for large-scale distributed systems.
-**3. Decentralized Control:** There is no central authority in this network; new nodes join by communicating with any of the available seed nodes, ensuring robustness and avoiding single points of failure.
-**4. Scalable Design:** The design allows easy scalability as new peers can be added, and each peer only connects to a subset of nodes, maintaining low overhead.
+* Resilient Network: The network is designed to handle node failures gracefully by quickly removing dead nodes from the list and preventing connections to inactive nodes.
+* Efficient Communication: The gossip protocol ensures efficient message broadcasting without redundancy, making it suitable for large-scale distributed systems.
+* Decentralized Control: There is no central authority in this network; new nodes join by communicating with any of the available seed nodes, ensuring robustness and avoiding single points of failure.
+* Scalable Design: The design allows easy scalability as new peers can be added, and each peer only connects to a subset of nodes, maintaining low overhead.
 

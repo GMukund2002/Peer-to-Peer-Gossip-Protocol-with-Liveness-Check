@@ -38,5 +38,10 @@ This project implements a peer-to-peer (P2P) gossip protocol network with livene
 ## Installation and Setup Instructions:
 #### 1. Clone the Repository:
 ```bash
-def hello_world():
-    print("Hello, World!")
+$ git clone https://github.com/username/peer-to-peer-gossip.git
+$ cd peer-to-peer-gossip
+
+Configure Seed Nodes:
+
+Modify the config.txt file to include the IP addresses and ports of the available seed nodes.
+Each line should have the format IP:Port, e.g., 172.30.21.114:8000

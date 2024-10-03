@@ -38,10 +38,25 @@ This project implements a peer-to-peer (P2P) gossip protocol network with livene
 ## Installation and Setup Instructions:
 #### 1. Clone the Repository:
 ```bash
-$ git clone https://github.com/username/peer-to-peer-gossip.git
-$ cd peer-to-peer-gossip
+git clone https://github.com/username/peer-to-peer-gossip.git
+cd peer-to-peer-gossip
+ ```
+#### 2. Configure Seed Nodes:
+* Modify the config.txt file to include the IP addresses and ports of the available seed nodes.
+* Each line should have the format IP:Port, e.g., 172.30.21.114:8000.
 
-Configure Seed Nodes:
+#### 3. Running seed nodes
+* Open a terminal window and run the seed.py script.
+* You will be prompted to enter a port number. Choose a unique port for each seed node.
+```bash
+python seed.py
+ ```
 
-Modify the config.txt file to include the IP addresses and ports of the available seed nodes.
-Each line should have the format IP:Port, e.g., 172.30.21.114:8000
+#### 4. Running Peer Nodes:
+* Open another terminal window and run the peer.py script.
+* Enter a port number that is different from the ones used by seed nodes.
+* The peer node will automatically read the seed addresses from the config.txt file and attempt to register itself with floor(n/2) + 1 seed nodes.
+```bash
+python peer.py
+ ```
+
